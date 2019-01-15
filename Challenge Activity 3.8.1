@@ -1,0 +1,24 @@
+/*
+   Write an expression to detect that the first character of userInput matches firstLetter. 
+*/
+
+import java.util.Scanner;
+
+public class CharMatching {
+   public static void main (String [] args) {
+      String userInput = "";
+      char firstLetter = '-';
+
+      userInput = "banana";
+      firstLetter = 'b';
+
+      if (/* Your solution goes here  */ userInput.charAt(0) == firstLetter /* End of solution */) {
+         System.out.println("Found match: " + firstLetter);
+      }
+      else {
+         System.out.println("No match: " + firstLetter);
+      }
+
+      return;
+   }
+}
