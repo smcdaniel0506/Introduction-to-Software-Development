@@ -1,0 +1,27 @@
+/*
+   Given positive integer numInsects, write a while loop that prints that number doubled 
+   without reaching 100. Follow each number with a space. After the loop, print a newline.
+*/
+
+import java.util.Scanner;
+
+public class InsectGrowth {
+   public static void main (String [] args) {
+      int numInsects = 0;
+
+      numInsects = 8; // Must be >= 1
+
+      /* Your solution goes here  */
+      
+      while (numInsects < 100) {
+         System.out.print(numInsects + " ");
+         numInsects *= 2;
+      }
+      
+      System.out.println();
+      
+      /* End of solution */
+
+      return;
+   }
+}
