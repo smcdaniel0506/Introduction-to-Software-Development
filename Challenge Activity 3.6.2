@@ -1,0 +1,31 @@
+/*
+   Write an if-else statement to describe an object. 
+   Print "Balloon" if isBalloon is true and isRed is false. 
+   Print "Red balloon" if isBalloon and isRed are both true. 
+   Print "Not a balloon" otherwise. End with newline. 
+*/
+
+import java.util.Scanner;
+
+public class RedBalloon {
+   public static void main (String [] args) {
+      boolean isRed = false;
+      boolean isBalloon = false;
+
+      /* Your solution goes here  */
+      
+      if ((isBalloon) && !(isRed)) {
+         System.out.println("Balloon");
+      }
+      if ((isBalloon) && (isRed)) {
+         System.out.println("Red balloon");
+      }
+      else if (!isBalloon) {
+         System.out.println("Not a balloon");
+      }
+      
+      /* End of solution */
+
+      return;
+   }
+}
