@@ -1,0 +1,31 @@
+/*
+   Set hasDigit to true if the 3-character passCode contains a digit. 
+*/
+
+public class CheckingPasscodes {
+   public static void main (String [] args) {
+      boolean hasDigit = false;
+      String passCode = "";
+      int valid = 0;
+
+      passCode = "abc";
+
+      /* Your solution goes here  */
+      
+      if (Character.isDigit(passCode.charAt(0)) || (Character.isDigit(passCode.charAt(1)) || 
+         (Character.isDigit(passCode.charAt(2))))) { 
+         hasDigit = true;
+      }
+      
+      /* End of solution */
+
+      if (hasDigit) {
+         System.out.println("Has a digit.");
+      }
+      else {
+         System.out.println("Has no digit.");
+      }
+
+      return;
+   }
+}
