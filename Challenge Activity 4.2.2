@@ -1,0 +1,20 @@
+/*
+   Write an expression that executes the loop body as long as the user enters a non-negative number. 
+*/
+
+import java.util.Scanner;
+
+public class NonNegativeLooper {
+   public static void main (String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      int userNum = 0;
+
+      while (/* Your solution goes here  */ userNum > -1 /* End of solution */) {
+         System.out.println("Body");
+         userNum = scnr.nextInt();
+      }
+      System.out.println("Done.");
+
+      return;
+   }
+}
