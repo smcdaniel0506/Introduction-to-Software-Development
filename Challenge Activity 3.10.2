@@ -1,0 +1,27 @@
+/*
+   Write code to print the location of any space in the 2-character string passCode. 
+   Each space detected should print a separate statement followed by a newline.
+*/
+
+import java.util.Scanner;
+
+public class FindSpaces {
+   public static void main (String [] args) {
+      String passCode = "";
+
+      passCode = "A ";
+
+      /* Your solution goes here  */
+      
+      if (Character.isWhitespace(passCode.charAt(0))) {
+         System.out.println("Space at 0");  
+      }
+      if (Character.isWhitespace(passCode.charAt(1))) {
+         System.out.println("Space at 1");  
+      }
+      
+      /* End of solution */
+
+      return;
+   }
+}
