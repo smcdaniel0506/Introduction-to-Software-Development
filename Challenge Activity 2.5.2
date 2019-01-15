@@ -1,0 +1,25 @@
+/*
+   Compute the acceleration of gravity for a given 
+   distance from the earth's center, distCenter, assigning 
+   the result to accelGravity. 
+*/
+
+public class GravityCalculation {
+   public static void main (String [] args) {
+      double G            = 6.673e-11;
+      double M            = 5.98e24;
+      double accelGravity = 0.0;
+      double distCenter   = 0.0;
+
+      distCenter = 6.38e6;
+
+      /* Your solution goes here  */
+      
+      accelGravity = (G*M)/(distCenter*distCenter);
+      
+      /* End of solution */
+
+      System.out.println("accelGravity: " + accelGravity);
+      return;
+   }
+}
