@@ -1,0 +1,28 @@
+/*
+   Determine the distance between point (x1, y1) and point (x2, y2), 
+   and assign the result to pointsDistance.
+*/
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class CoordinateGeometry {
+   public static void main(String [] args) {
+      double x1 = 1.0;
+      double y1 = 2.0;
+      double x2 = 1.0;
+      double y2 = 5.0;
+      double pointsDistance = 0.0;
+
+      /* Your solution goes here  */
+      
+      pointsDistance = Math.sqrt(Math.pow((x2 - x1), 2.0) + (Math.pow((y2 - y1), 2.0)));
+      
+      /* End of solution */
+
+      System.out.print("Points distance: ");
+      System.out.println(pointsDistance);
+
+      return;
+   }
+}
