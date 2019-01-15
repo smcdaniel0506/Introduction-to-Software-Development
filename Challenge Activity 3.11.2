@@ -1,0 +1,26 @@
+/*
+   Using a conditional expression, write a statement 
+   that increments numUsers if updateDirection is 1, otherwise decrements numUsers. 
+*/
+
+import java.util.Scanner;
+
+public class UpdateNumberOfUsers {
+   public static void main (String [] args) {
+      int numUsers = 0;
+      int updateDirection = 0;
+
+      numUsers = 8;
+      updateDirection = 1;
+
+      /* Your solution goes here  */
+      
+      numUsers = (updateDirection == 1) ? numUsers + 1 : numUsers - 1;
+      
+      /* End of solution */
+
+      System.out.println("New value is: " + numUsers);
+
+      return;
+   }
+}
