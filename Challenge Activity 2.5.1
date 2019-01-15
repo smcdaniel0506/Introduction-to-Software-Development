@@ -1,0 +1,23 @@
+/*
+   Given sphereRadius and piVal, compute the volume of a sphere and assign to sphereVolume. 
+   Use (4.0 / 3.0) to perform floating-point division, instead of (4 / 3) which performs integer division.
+*/
+
+public class SphereVolumeCalculator {
+   public static void main (String [] args) {
+      double piVal = 3.14159;
+      double sphereVolume = 0.0;
+      double sphereRadius = 0.0;
+
+      sphereRadius = 1.0;
+
+      /* Your solution goes here  */
+      
+      sphereVolume = (4.0 / 3.0) * piVal * (sphereRadius * sphereRadius * sphereRadius);
+      
+      /* End of solution */
+
+      System.out.println("Sphere volume: " + sphereVolume);
+      return;
+   }
+}
