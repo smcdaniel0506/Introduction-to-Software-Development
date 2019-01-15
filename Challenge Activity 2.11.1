@@ -1,0 +1,27 @@
+/*
+   A user types a word and a number on a single line. 
+   Read them into the provided variables. 
+   Then print: word_number. End with newline.
+*/
+
+import java.util.Scanner;
+
+public class SpaceReplace {
+   public static void main (String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      String userWord = "";
+      int userNum = 0;
+
+      /* Your solution goes here  */
+      
+      String userName;
+      
+      userWord = scnr.next();
+      userNum = scnr.nextInt();
+      userName = userWord + "_" + userNum;
+      
+      System.out.println(userName);
+
+      return;
+   }
+}
