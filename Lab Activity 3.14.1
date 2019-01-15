@@ -1,0 +1,46 @@
+/*
+   (1) If a user's input string matches a known text message abbreviation, output the unabbreviated form, else output: Unknown. Support two abbreviations: LOL -- laughing out loud, and IDK -- I don't know. (3 pts) 
+
+   Sample input/output:
+
+   Input an abbreviation: LOL
+   laughing out loud
+
+   (2) Expand to also decode these abbreviations. (4 pts)
+
+   BFF -- best friends forever
+   IMHO -- in my humble opinion
+   TMI -- too much information
+*/
+
+import java.util.Scanner;
+
+public class TextMsgAbbreviation {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      
+      System.out.println("Input an abbreviation: ");
+      String user_input = scnr.nextLine();
+      
+      if (user_input.contains("LOL")) {
+         System.out.println("laughing out loud");
+      }
+      else if (user_input.contains("IDK")) {
+         System.out.println("I don't know");
+      }
+      else if (user_input.contains("BFF")) {
+         System.out.println("best friends forever");
+      }
+      else if (user_input.contains("IMHO")) {
+         System.out.println("in my humble opinion");
+      }
+      else if (user_input.contains("TMI")) {
+         System.out.println("too much information");
+      }
+      else {
+         System.out.println("Unknown");   
+      }
+      
+      return;
+   }
+}
