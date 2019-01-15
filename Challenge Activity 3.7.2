@@ -1,0 +1,34 @@
+/*
+   Print the two strings in alphabetical order. 
+   Assume the strings are lowercase. End with newline. 
+*/
+
+import java.util.Scanner;
+
+public class OrderStrings {
+   public static void main (String [] args) {
+      String firstString;
+      String secondString;
+
+      firstString  = "rabbits";
+      secondString = "capes";
+
+      /* Your solution goes here  */
+      
+      int compare = firstString.compareTo(secondString);
+      
+      if (compare < 0) {
+         System.out.println(firstString+ " " + secondString);
+      }
+      else if (compare > 0) {
+         System.out.println(secondString + " " + firstString);   
+      }
+      else {
+         System.out.println(firstString + " " + secondString);  
+      }
+      
+      /* End of solution */
+
+      return;
+   }
+}
