@@ -1,0 +1,26 @@
+/*
+   Write an expression that continues to bid until the user enters 'n'. 
+*/
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class AutoBidder {
+   public static void main (String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      Random randGen = new Random();
+      char keepGoing = '-';
+      int nextBid = 0;
+
+      randGen.setSeed(5);
+      while (/* Your solution goes here  */ keepGoing != 'n' /* End of solution */) {
+         nextBid = nextBid + (randGen.nextInt(10) + 1);
+         System.out.println("I'll bid $" + nextBid + "!");
+         System.out.print("Continue bidding? (y/n) ");
+         keepGoing = scnr.next().charAt(0);
+      }
+      System.out.println("");
+
+      return;
+   }
+}
