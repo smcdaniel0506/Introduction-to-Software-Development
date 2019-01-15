@@ -1,0 +1,33 @@
+/*
+   Re-type the following and run, note incorrect behavior. 
+   Then fix errors in the code, which should print numStars asterisks.
+   
+   while (numPrinted != numStars) {
+      System.out.print("*");    
+   } 
+*/
+
+import java.util.Scanner;
+
+public class StarPrinter {
+   public static void main (String [] args) {
+      int numStars = 0;
+      int numPrinted = 0;
+
+      numStars = 12;
+      numPrinted = 1;
+
+      /* Your solution goes here  */
+      
+      while (numPrinted <= numStars) {
+         System.out.print("*");
+         numPrinted++;
+      }
+      
+      /* End of solution */
+
+      System.out.println("");
+
+      return;
+   }
+}
