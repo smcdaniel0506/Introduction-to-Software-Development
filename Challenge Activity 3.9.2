@@ -1,0 +1,27 @@
+/*
+   Modify secondVerse to play "The Name Game" (a.k.a. "The Banana Song", see Wikipedia.org), b
+   y replacing "(Name)" with userName but without the first letter. 
+   Ex: if userName = "Katie", the program prints: 
+   Banana-fana fo-fatie!
+*/
+
+import java.util.Scanner;
+
+public class NameSong {
+   public static void main (String [] args) {
+      String secondVerse = "Banana-fana fo-f(Name)!";
+      String userName = "Katie";
+
+      userName = userName.substring(1); // Removes first char from userName
+
+      /* Your solution goes here  */
+      
+      secondVerse = secondVerse.replace("(Name)", userName);
+      
+      /* End of solution */
+
+      System.out.println(secondVerse);
+
+      return;
+   }
+}
