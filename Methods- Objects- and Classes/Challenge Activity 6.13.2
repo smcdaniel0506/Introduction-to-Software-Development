@@ -1,0 +1,44 @@
+/*
+   Define the missing method. licenseNum is created as: (100000 * customID) + licenseYear.
+*/
+
+// ===== Code from file DogLicense.java =====
+public class DogLicense {
+   private int licenseYear;
+   private int licenseNum;
+
+   public void setYear(int yearRegistered) {
+      licenseYear = yearRegistered;
+      return;
+   }
+
+   // FIXME: Write createLicenseNum()
+
+   /* Your solution goes here  */
+   
+   public void createLicenseNum(int customID) {
+      licenseNum = (100000 * customID) + licenseYear;
+      return;
+   }
+   
+   /* End of solution */
+
+   public int getLicenseNum() {
+      return licenseNum;
+   }
+}
+// ===== end =====
+
+// ===== Code from file CallDogLicense.java =====
+public class CallDogLicense {
+   public static void main (String [] args) {
+      DogLicense dog1 = new DogLicense();
+
+      dog1.setYear(2014);
+      dog1.createLicenseNum(777);
+      System.out.println("Dog license: " + dog1.getLicenseNum());
+
+      return;
+   }
+}
+// ===== end =====
