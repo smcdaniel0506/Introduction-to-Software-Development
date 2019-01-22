@@ -1,0 +1,38 @@
+/*
+   Write a method printShampooInstructions(), with int parameter numCycles, and void return type. 
+   If numCycles is less than 1, print "Too few.". If more than 4, print "Too many.". 
+   Else, print "N: Lather and rinse." numCycles times, where N is the cycle number, followed by "Done.". 
+   End with a newline.
+*/
+
+import java.util.Scanner;
+
+public class ShampooMethod {
+
+   /* Your solution goes here  */
+   
+   public static void printShampooInstructions(int numCycles) {
+      if (numCycles < 1){
+         System.out.print("Too few.\n");   
+      }
+      else if (numCycles > 4){
+         System.out.print("Too many.\n");   
+      }
+      else {
+         for(int n = 1; n <= numCycles; n++) {
+            System.out.print(n + ": Lather and rinse.\n");   
+         }
+        System.out.println("Done.");
+      }
+      
+      return;
+   }
+   
+   /* End of solution */
+
+   public static void main (String [] args) {
+      printShampooInstructions(2);
+
+      return;
+   }
+}
