@@ -1,0 +1,25 @@
+/* 
+   Define a method pyramidVolume with 
+   double parameters baseLength, baseWidth, and pyramidHeight, 
+   that returns as a double the volume of a pyramid with a rectangular base.
+*/
+
+import java.util.Scanner;
+
+public class CalcPyramidVolume {
+
+   /* Your solution goes here  */
+   
+   public static double pyramidVolume(double baseLength, double baseWidth, double pyramidHeight) {
+      double baseArea = baseLength * baseWidth; 
+      return (baseArea * pyramidHeight) * (1.0/3.0);
+      
+   }
+   
+   /* End of solution */
+
+   public static void main (String [] args) {
+      System.out.println("Volume for 1.0, 1.0, 1.0 is: " + pyramidVolume(1.0, 1.0, 1.0));
+      return;
+   }
+}
