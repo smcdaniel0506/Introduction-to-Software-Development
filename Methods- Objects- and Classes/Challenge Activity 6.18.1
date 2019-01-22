@@ -1,0 +1,38 @@
+/*
+   Define the missing method. Use "this" to distinguish the local member from the parameter name.
+*/
+
+// ===== Code from file CablePlan.java =====
+public class CablePlan {
+   private int numDays;
+
+   // FIXME: Define setNumDays() method, using "this" implicit parameter.
+   public void setNumDays(int numDays) {
+
+      /* Your solution goes here  */
+      
+      this.numDays = numDays;
+      
+      /* End of solution */
+
+      return;
+   }
+
+   public int getNumDays() {
+      return numDays;
+   }
+}
+// ===== end =====
+
+// ===== Code from file CallCablePlan.java =====
+public class CallCablePlan {
+   public static void main (String [] args) {
+      CablePlan house1Plan = new CablePlan();
+
+      house1Plan.setNumDays(30);
+      System.out.println(house1Plan.getNumDays());
+
+      return;
+   }
+}
+// ===== end =====
