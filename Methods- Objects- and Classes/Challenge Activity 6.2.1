@@ -1,0 +1,39 @@
+/*
+   Complete the printTicTacToe method with char parameters horizChar 
+   and vertChar that prints a tic-tac-toe board with the characters as follows. 
+   End with newline. E
+   x: printTicTacToe('~', '!') prints:
+   x!x!x
+   ~~~~~
+   x!x!x
+   ~~~~~
+   x!x!x
+   
+   Hint: To ensure printing of characters, start your print statement as: System.out.println("" + horizChar ...).
+
+*/
+
+import java.util.Scanner;
+
+public class GameBoardPrinter {
+   public static void printTicTacToe(char horizChar, char vertChar) {
+
+      /* Your solution goes here  */
+      
+      System.out.println("x" + vertChar + "x" + vertChar + "x");  
+      System.out.printf("%c%c%c%c%c\n", horizChar, horizChar, horizChar, horizChar, horizChar);
+      System.out.println("x" + vertChar + "x" + vertChar + "x");  
+      System.out.printf("%c%c%c%c%c\n", horizChar, horizChar, horizChar, horizChar, horizChar);
+      System.out.println("x" + vertChar + "x" + vertChar + "x"); 
+      
+      /* End of solution */
+
+      return;
+   }
+
+   public static void main (String [] args) {
+      printTicTacToe('~', '!');
+
+      return;
+   }
+}
