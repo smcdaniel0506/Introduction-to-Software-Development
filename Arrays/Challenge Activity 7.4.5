@@ -1,0 +1,34 @@
+/*
+   Write a for loop to print all NUM_VALS elements of array hourlyTemp. 
+   Separate elements with a comma and space.
+*/
+
+import java.util.Scanner;
+
+public class PrintWithComma {
+   public static void main (String [] args) {
+      final int NUM_VALS = 4;
+      int[] hourlyTemp = new int[NUM_VALS];
+      int i = 0;
+
+      hourlyTemp[0] = 90;
+      hourlyTemp[1] = 92;
+      hourlyTemp[2] = 94;
+      hourlyTemp[3] = 95;
+
+      /* Your solution goes here  */
+      
+      for(i = 0; i < NUM_VALS - 1; ++i) {
+         System.out.print(hourlyTemp[i] + ", ");
+         
+      }
+      
+      System.out.print(hourlyTemp[NUM_VALS - 1]);
+      
+      /* End of solution */
+
+      System.out.println("");
+
+      return;
+   }
+}
